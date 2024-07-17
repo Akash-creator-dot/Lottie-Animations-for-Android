@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        app:cardElevation="14dp"
+        app:cardBackgroundColor="#fff"
+        app:cardCornerRadius="17dp"
+        android:layout_height="300dp"
+        app:cardUseCompatPadding="true"
+        >
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/numbers"
+            android:id="@+id/n"
+            />
+    </androidx.cardview.widget.CardView>
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/lottie1"
+        android:id="@+id/lot1"
+        android:visibility="gone"
+        />
+</LinearLayout>
